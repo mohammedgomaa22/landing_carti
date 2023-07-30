@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - كارتي</title>
+    <!-- Tailwind CSS file -->
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <!-- Font Awesome CSS file -->
+    <link href="./css/all.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Animation cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="./img/logo.ico">
+</head>
+<body>
+    <div id="app" class="relative">
+        <!-- ********** Start Navbar ********** -->
+        <nav class="navbar h-[88px] bg-purple-100 fixed left-0 top-0 w-full z-50 py-2">
+            <div class="container px-5 xl:px-28 mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="logo w-36 max-h-[41px]">
+                    <img loading="lazy" src="./img/logo.ico" alt="logo" class="max-w-full max-h-[41px]">
+                </div>
+                <div class="row flex justify-between items-center">
+                    <!-- UL Navbar -->
+                    <div class="ul flex gap-8 items-center py-4">
+                        <!-- Nav in full screen -->
+                        <div class="flex gap-16">
+                            <ul class="hidden lg:flex gap-6 font-medium text-white items-center">
+                                <li>
+                                    <a href="#" class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300" aria-label="Read more about Seminole tax hike"
+                                        data-text="home">الرئيسية</a>
+                                </li>
+                                <li>
+                                    <a href="#learn" class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300"
+                                        aria-label="Read more about Seminole tax hike" data-text="learn">التعليم</a>
+                                </li>
+                                <li>
+                                    <a href="#solve" class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300"
+                                        aria-label="Read more about Seminole tax hike" data-text="solve">الحلول</a>
+                                </li>
+                                <li>
+                                    <a href="#price" class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300"
+                                        aria-label="Read more about Seminole tax hike" data-text="price">الأسعار</a>
+                                </li>
+                            </ul>
+                            <div class="signup hidden lg:flex">
+                                <a href="#" target="_blank" class="bg-purple-700 hover:bg-purple-800 py-2 px-2 duration-300 text-warning-50 rounded-md">أنشئ متجرك مجاناً</a>
+                            </div>
+                        </div>
+                        <!-- Nav in Mobile -->
+                        <ul class="sidebar w-full flex flex-col gap-4 py-3 absolute left-0 top-[57px] -translate-x-[100%] bg-purple-200 text-white duration-500">
+                            <li>
+                                <a href="#" class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                    aria-label="Read more about Seminole tax hike" data-text="home">الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="#learn" class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                    aria-label="Read more about Seminole tax hike" data-text="learn">التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#solve" class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                    aria-label="Read more about Seminole tax hike" data-text="solve">الحلول</a>
+                            </li>
+                            <li>
+                                <a href="#price" class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                aria-label="Read more about Seminole tax hike" data-text="price">الأسعار</a>
+                            </li>
+                            <div class="signup p-4 mx-auto">
+                                <a href="#" target="_blank" class="bg-purple-700 hover:bg-purple-800 py-2 px-2 duration-300 text-warning-50 rounded-md">أنشئ متجرك مجاناً</a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="text-2xl cursor-pointer lg:hidden w-[30px]">
+                        <span class="toggler fas fa-bars block h-full w-full"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ********** End Navbar ********** -->
+        <!-- ********** Start header ********** -->
+        <header class="bg-purple-100 mt-[88px] py-6 md:pb-10 md:pt-20 min-h-[100vh]">
+            <div class="container px-5 xl:px-6 mx-auto">
+                <!-- Info -->
+                <div class="info text-center">
+                    <h1 class="text-2xl sm:text-4xl font-bold text-purple-900 mb-6">كارتي.. تجارة ذكيَّة وسهلة</h1>
+                    <p class="sm:max-w-3xl text-xl mx-auto leading-8 font-semibold text-purple-800">أنشئ متجرك الإلكتروني في دقائق، واربط منتجاتك بمجموعة متكاملة من الحلول الرقميَّة الذكيَّة للمدفوعات، والشحن، وإدارة
+                    المخزون، والتسويق، بكل سهولة؛ لأن نجاحك لا يحتاج إلى تعقيد.</p>
+                </div>
+                <!-- Buttons -->
+                <div class="btn mt-8 sm:mt-12 flex justify-center items-center flex-wrap gap-8">
+                    <div class="signup">
+                        <a href="#" target="_blank"
+                            class="bg-purple-700 hover:bg-purple-800 py-2 px-3 duration-300 text-warning-50 rounded-md">
+                            <i class="fas fa-plus border p-1 rounded-md ml-2"></i>
+                            أنشئ متجرك
+                            مجاناً</a>
+                    </div>
+                    <div class="signup">
+                        <a href="#" target="_blank"
+                            class="bg-transparent text-purple-900 hover:bg-purple-800 hover:text-warning-50 py-2 px-3 duration-300 border border-purple-700 rounded-md">تجربة المنصة</a>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="img max-w-[990px] mx-auto rounded-xl overflow-hidden mt-10">
+                    <img src="./img/1.png" alt="img-home" class="max-w-full max-h-full" loading="lazy">
+                </div>
+            </div>
+        </header>
+        <!-- ********** End header ********** -->
+        <!-- ********** Start About ********** -->
+        <div class="about-us py-20">
+            <div class="container mx-auto text-center">
+                <div class="info">
+                    <h2 class="title text-2xl md:text-4xl font-bold text-purple-800 mb-2 md:mb-5">أكبر منصَّة مصرية للتجارة الإلكترونيَّة في الشرق الأوسط</h2>
+                    <p class="title text-lg font-semibold text-secondary-700">أنشئ متجرك الإلكتروني، وانضمَّ لعشرات الآلاف من العلامات المحلية والعالمية الناجحة مع كارتي اليوم</p>
+                </div>
+                <div class="numbers mt-16">
+                    <div class="row flex flex-col sm:flex-row gap-16 sm:justify-center">
+                        <!-- Col 1 -->
+                        <div class="col flex gap-4 items-center justify-center">
+                            <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <div class="num flex flex-col gap-2 items-start">
+                                <p class="text-3xl font-bold text-purple-900">36,000 +</p>
+                                <span class="font-semibold text-secondary-700">متجر الكتروني</span>
+                            </div>
+                        </div>
+                        <!-- Col 2 -->
+                        <div class="col flex gap-4 items-center justify-center">
+                            <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+                            <div class="num flex flex-col gap-2 items-start">
+                                <p class="text-3xl font-bold text-purple-900">14,000,000,000 +</p>
+                                <span class="font-semibold text-secondary-700">مبيعات المنصة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** End About ********** -->
+        <!-- ********** Start Advantages ********** -->
+        <div class="advantages py-20 bg-secondary-50">
+            <div class="container mx-auto text-center xl:px-20">
+                <p class="text-secondary-700 text-xl">مهما كان مجال تجارتك يمكنك الاعتماد على سلة ودعمها لمختلف القطاعات</p>
+                <!-- Row -->
+                <div class="row grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+                    <!-- Col -->
+                    <div class="col flex gap-4 items-center rounded-lg shadow-md p-4 bg-[white] cursor-pointer">
+                        <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <div class="num flex flex-col gap-2 items-start">
+                            <p class="text-xl font-bold text-purple-900">متاجر التجزئة</p>
+                            <span class="font-semibold text-secondary-700 text-right">مزايا عديدة تلائم تجارتك</span>
+                        </div>
+                    </div>
+                    <!-- Col -->
+                    <div class="col flex gap-4 items-center rounded-lg shadow-md p-4 bg-[white] cursor-pointer">
+                        <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                            <i class="fas fa-user-group"></i>
+                        </div>
+                        <div class="num flex flex-col gap-2 items-start">
+                            <p class="text-xl font-bold text-purple-900">قطاع الجملة</p>
+                            <span class="font-semibold text-secondary-700 text-right">نقلة نوعية في البيع للشركات والمؤسسات</span>
+                        </div>
+                    </div>
+                    <!-- Col -->
+                    <div class="col flex gap-4 items-center rounded-lg shadow-md p-4 bg-[white] cursor-pointer">
+                        <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="num flex flex-col gap-2 items-start">
+                            <p class="text-xl font-bold text-purple-900">المطاعم والمقاهي</p>
+                            <span class="font-semibold text-secondary-700 text-right">جميع ما تحتاجه لإدارة اعمالك رقمياً</span>
+                        </div>
+                    </div>
+                    <!-- Col -->
+                    <div class="col flex gap-4 items-center rounded-lg shadow-md p-4 bg-[white] cursor-pointer">
+                        <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="num flex flex-col gap-2 items-start">
+                            <p class="text-xl font-bold text-purple-900">صناعة المحتوى</p>
+                            <span class="font-semibold text-secondary-700 text-right">المكان الانسب لتحويل شغفك بصناعة المحتوى إلى ارباح</span>
+                        </div>
+                    </div>
+                    <!-- Col -->
+                    <div class="col flex gap-4 items-center rounded-lg shadow-md p-4 bg-[white] cursor-pointer">
+                        <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="num flex flex-col gap-2 items-start">
+                            <p class="text-xl font-bold text-purple-900">تقديم الخدمات</p>
+                            <span class="font-semibold text-secondary-700 text-right">حلول مميزة لتقديم خدماتك وإدارة أعمالك</span>
+                        </div>
+                    </div>
+                    <!-- Col -->
+                    <div class="col flex gap-4 items-center rounded-lg shadow-md p-4 bg-[white] cursor-pointer">
+                        <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                            <i class="fas fa-computer"></i>
+                        </div>
+                        <div class="num flex flex-col gap-2 items-start">
+                            <p class="text-xl font-bold text-purple-900">المنتجات الرقمية</p>
+                            <span class="font-semibold text-secondary-700 text-right">المكان الانسب لبيع كافة المنتجات الرقمية</span>
+                        </div>
+                    </div>
+                    <!-- Col -->
+                    <div class="col flex gap-4 items-center rounded-lg shadow-md p-4 bg-[white] cursor-pointer">
+                        <div class="icon p-2 text-5xl border-2 text-purple-900 border-purple-200 rounded-lg">
+                            <i class="fas fa-money-bill-1"></i>
+                        </div>
+                        <div class="num flex flex-col gap-2 items-start">
+                            <p class="text-xl font-bold text-purple-900">الجمعيات الخيرية</p>
+                            <span class="font-semibold text-secondary-700 text-right">حلول سهلة لكافة الاحتياجات الرقمية لجمعيتكم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** End Advantages ********** -->
+        <!-- ********** Start your site ********** -->
+        <div class="your-site py-20">
+            <div class="container mx-auto xl:px-20">
+                <div class="row flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-8">
+                    <!-- Text -->
+                    <div class="col text">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-purple-900">متجرك على ذوقك</h3>
+                        <p class="text-secondary-700 text-lg sm:text-xl font-medium my-5">نجاحك التجاري يحتاج لمظهر أنيق، اختر مظهرًا يناسب علامتك.</p>
+                        <ul class="mt-10 text-sm sm:text-base">
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                مكتبة متنوعة من الثيمات الجاهزة القابلة للتخصيص حسب رغبتك.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                تخصيص تفاصيل التصميم عن طريق JS و CSS.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                كما يمكنك صنع ثيمك الخاص مع Salla Twilight.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Img -->
+                    <div class="col img flex-1 rounded-xl overflow-hidden">
+                        <img loading="lazy" src="./img/6.png" alt="your-site">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** End your site ********** -->
+        <!-- ********** Start comm ********** -->
+        <div class="comm py-20 bg-secondary-50">
+            <div class="container mx-auto xl:px-20">
+                <div class="row flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+                    <!-- Img -->
+                    <div class="col img flex-1 rounded-xl overflow-hidden lg:max-w-[60%]">
+                        <img loading="lazy" src="./img/2.png" alt="your-site">
+                    </div>
+                    <!-- Text -->
+                    <div class="col text">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-purple-900">تجارة لا تعرف حدودًا</h3>
+                        <p class="text-secondary-700 text-lg sm:text-xl font-medium my-5">من السعوديَّة لكل العالم بكل سهولة.</p>
+                        <ul class="mt-10 text-sm sm:text-base">
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                دعم أكثر من 40 لغة.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                استقبال المدفوعات من أكثر من 79 دولة.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                شحن دولي يغطي معظم دول العالم.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                إمكانية إضافة فروع ومستودعات متعددة لمتجرك.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** End comm ********** -->
+        <!-- ********** Start payment ********** -->
+        <div class="payment py-20">
+            <div class="container mx-auto xl:px-20">
+                <div class="row flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-8">
+                    <!-- Text -->
+                    <div class="col text lg:max-w-[33%]">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-purple-900">مدفوعات آمنة، لتجارة مستدامة، وثقة متينة!</h3>
+                        <p class="text-secondary-700 text-lg sm:text-xl font-medium my-5">استفد من نظام سلة المتكامل للمدفوعات الإلكترونية لإدارة مدفوعات متجرك وعملائك</p>
+                        <ul class="mt-10 text-sm sm:text-base">
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                وسائل دفع متنوعة تلبي كافة احتياجات عملائك.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                تفعيل سريع لنظام المدفوعات خلال يوم واحد.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                تحصيل المدفوعات بعد 24 ساعة.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                            حماية عالية وأمان لكافة عملياتك.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Img -->
+                    <div class="col img flex-1 rounded-xl overflow-hidden lg:max-w-[60%]">
+                        <img loading="lazy" src="./img/4.png" alt="your-site">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** End payment ********** -->
+        <!-- ********** Start link ********** -->
+        <div class="link py-20 bg-secondary-50">
+            <div class="container mx-auto xl:px-20">
+                <div class="row flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+                    <!-- Img -->
+                    <div class="col img flex-1 rounded-xl overflow-hidden lg:max-w-[60%]">
+                        <img loading="lazy" src="./img/5.png" alt="your-site">
+                    </div>
+                    <!-- Text -->
+                    <div class="col text lg:max-w-[33%]">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-purple-900">أسطول شحن متكامل في خدمة منتجاتك</h3>
+                        <p class="text-secondary-700 text-lg sm:text-xl font-medium my-5">خيارات شحن متنوعة تربط متجرك بالعالم</p>
+                        <ul class="mt-10 text-sm sm:text-base">
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                ربط سهل بدون عقود.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                اربط متجرك بأكثر من 100 شركة شحن وتوصيل محليَّة ودوليَّة.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                خدمات شحن ولوجستيات مخصًّصة لجميع أنواع المنتجات.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                            شحن دولي ومحلي يغطي جميع المدن والقرى، والأماكن البعيدة.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** End link ********** -->
+        <!-- ********** Start solve ********** -->
+        <div class="solve py-20">
+            <div class="container mx-auto xl:px-20">
+                <div class="row flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-8">
+                    <!-- Text -->
+                    <div class="col text lg:max-w-[33%]">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-purple-900">حلول تسويقيَّة في مكان واحد</h3>
+                        <p class="text-secondary-700 text-lg sm:text-xl font-medium my-5">استهدف المزيد من العملاء بحلول تسويقية مخصصة</p>
+                        <ul class="mt-10 text-sm sm:text-base">
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                قدم لعملائك كوبونات خصم مميزة تشجعهم على إتمام الشراء.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                تحكم بكافة تفاصيل العروض والخصومات.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                                دعم التسويق بالعمولة لمتجرك.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                            استهداف دقيق للسلات المتروكة.
+                            </li>
+                            <li class="text-secondary-700 mb-3 font-semibold">
+                                <i class="fas fa-angle-left text-purple-800 block -ml-5"></i>
+                                <i class="fas fa-angle-left text-purple-800 block ml-5"></i>
+                            إدارة الحملات الإعلانية على مختلف المنصات.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Img -->
+                    <div class="col img flex-1 rounded-xl overflow-hidden lg:max-w-[60%]">
+                        <img loading="lazy" src="./img/3.png" alt="your-site">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********** End solve ********** -->
+        <!-- ********** Start Footer ********** -->
+        <footer class="p-6 text-center text-[white] bg-purple-700">
+            جميع الحقوق محفوظة لمنصة كارتي
+        </footer>
+        <!-- ********** End Footer ********** -->
+    </div>
+    <!-- Animation cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- -----Tailwind-----  -->
+    <!-- <script type="text/javascript" src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script> -->
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

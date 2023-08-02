@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسعار - كارتي</title>
+    <!-- Tailwind CSS file -->
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <!-- Font Awesome CSS file -->
+    <link href="./css/all.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="./img/logo.ico">
+</head>
+<body>
+    <div id="app" class="relative">
+        <!-- ********** Start Navbar ********** -->
+        <nav class="navbar h-[88px] bg-purple-100 fixed left-0 top-0 w-full z-50 py-2">
+            <div class="container px-5 xl:px-28 mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="logo w-36 max-h-[41px]">
+                    <img loading="lazy" src="./img/logo.ico" alt="logo" class="max-w-full max-h-[41px]">
+                </div>
+                <div class="row flex justify-between items-center">
+                    <!-- UL Navbar -->
+                    <div class="ul flex gap-8 items-center py-4">
+                        <!-- Nav in full screen -->
+                        <div class="flex gap-16">
+                            <ul class="hidden lg:flex gap-6 font-medium text-white items-center">
+                                <li>
+                                    <a href="./index.html"
+                                        class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300"
+                                        aria-label="Read more about Seminole tax hike" data-text="home">الرئيسية</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#learn"
+                                        class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300"
+                                        aria-label="Read more about Seminole tax hike" data-text="learn">التعليم</a>
+                                </li>
+                                <li>
+                                    <a href="#solve"
+                                        class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300"
+                                        aria-label="Read more about Seminole tax hike" data-text="solve">الحلول</a>
+                                </li> -->
+                                <li>
+                                    <a href="./pricing.html"
+                                        class="hover:text-purple-900 text-purple-700 font-semibold text-lg duration-300"
+                                        aria-label="Read more about Seminole tax hike" data-text="price">الأسعار</a>
+                                </li>
+                            </ul>
+                            <div class="signup hidden lg:flex">
+                                <a href="#" target="_blank"
+                                    class="bg-purple-700 hover:bg-purple-800 py-2 px-2 duration-300 text-warning-50 rounded-md">أنشئ
+                                    متجرك مجاناً</a>
+                            </div>
+                        </div>
+                        <!-- Nav in Mobile -->
+                        <ul
+                            class="sidebar w-full flex flex-col gap-4 py-3 absolute left-0 top-[57px] -translate-x-[100%] bg-purple-200 text-white duration-500">
+                            <li>
+                                <a href="#"
+                                    class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                    aria-label="Read more about Seminole tax hike" data-text="home">الرئيسية</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#learn"
+                                    class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                    aria-label="Read more about Seminole tax hike" data-text="learn">التعليم</a>
+                            </li>
+                            <li>
+                                <a href="#solve"
+                                    class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                    aria-label="Read more about Seminole tax hike" data-text="solve">الحلول</a>
+                            </li> -->
+                            <li>
+                                <a href="#price"
+                                    class="w-full p-2 hover:text-purple-900 hover:bg-purple-400 duration-300 block"
+                                    aria-label="Read more about Seminole tax hike" data-text="price">الأسعار</a>
+                            </li>
+                            <div class="signup p-4 mx-auto">
+                                <a href="#" target="_blank"
+                                    class="bg-purple-700 hover:bg-purple-800 py-2 px-2 duration-300 text-warning-50 rounded-md">أنشئ
+                                    متجرك مجاناً</a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="text-2xl cursor-pointer lg:hidden w-[30px]">
+                        <span class="toggler fas fa-bars block h-full w-full"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ********** End Navbar ********** -->
+        <!-- Start Pricing -->
+        <div class="pricing mt-[88px] py-6 md:pb-10 md:pt-20">
+            <div class="container px-5 xl:px-28 mx-auto">
+                <div class="head w-fit mx-auto mb-20 text-3xl font-bold text-purple-900 bg-red-200">
+                    <h1>الأسعار</h1>
+                </div>
+                <div class="table-pricing">
+                    <div class="responsive-table overflow-x-auto">
+                        <table class="min-w-[520px] w-full overflow-hidden">
+                            <thead class="p-4">
+                                <tr class=" font-semibold text-secondary-700 text-center">
+                                    <td class="p-2 py-5"></td>
+                                    <td class="p-2 py-5">
+                                        <img src="./img/logo.ico" alt="logo" loading="lazy" class="h-10 w-10 mx-auto my-2">
+                                        الباقة الأساسية
+                                    </td>
+                                    <td class="p-2 py-5">
+                                        <div class="starts text-[#FF9F00] text-xs mx-auto w-fit">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star text-base"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <img src="./img/logo.ico" alt="logo" loading="lazy" class="h-10 w-10 mx-auto my-2">
+                                        الباقة الاحترافية
+                                    </td>
+                                    <td class="p-2 py-5">
+                                        <div class="text-[#FF9F00] text-sm mx-auto w-fit">
+                                            <i class="fas fa-lines-leaning"></i>
+                                        </div>
+                                        <img src="./img/logo.ico" alt="logo" loading="lazy" class="h-10 w-10 mx-auto my-2">
+                                        الباقة المتقدمة
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- month -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        الاشتراك الشهري
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-[#FF9F00]">
+                                        كارتي بيسك
+                                        <span class="block text-sm text-secondary-900">مجاناً</span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                        كارتي برو
+                                        <span class="block text-sm text-secondary-900">299 ج.م / شهر</span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                        كارتي بلس
+                                        <span class="block text-sm text-secondary-900">99 ج.م / شهر</span>
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">عدد لامحدود من المنتجات</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">عدد لامحدود من الطلبات</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">بدون عمولة على المبيعات</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-4 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">بوليصات شحن كارتي المخفضة</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-5 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">دعم كل أنواع المنتجات</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-6 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">تفعيل الدفع الإلكتروني</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-6 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">تعدد شركات الشحن</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-7 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">تحسين ظهور متجرك على محركات البحث (SEO)</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-8 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">عرض واحتساب ضريبة القيمة المضافة </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                </tr>
+                                <!-- payment -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        طرق الدفع
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-warning-600">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الدفع عند الاستلام</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- taseeq -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        المزايا التسويقية
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-warning-600">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">كوبونات التخفيض</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الحملات التسويقية عبر رسائل SMS والبريد الإلكتروني</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- export -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        خدمات الشحن والتوصيل
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-warning-600">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">Aramex</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">DHL</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- themes -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        متجر الثيمات
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-warning-600">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">اختيار ثيم للمتجر</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">تخصيص ثيم المتجر</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">تخصيص التصميم من خلال Custom CSS & JS</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                </tr>
+                                <!-- maz -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        مزايا ادارة المتجر
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-warning-600">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">تطبيق لتاجر لإدارة المتجر عبر الجوال iOS و Android</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">شهادة SSL مجانية</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الأسئلة والتقييمات</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-4 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">التقارير</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-5 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">عدد المستخدمين</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg">
+                                        1
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg">
+                                        10
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg">
+                                        1
+                                    </td>
+                                </tr>
+                                <!-- Row-6 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">عدد الفروع والمستودعات لاستلام الطلب منها</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg">
+                                        1
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg">
+                                        5
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg">
+                                        1
+                                    </td>
+                                </tr>
+                                <!-- Row-7 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">إمكانية تجميد الاشتراك السنوي لمدة 30 يوم</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-8 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">حجز رابط خاص (دومين)</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-9 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">إنشاء تطبيق للمتجر iOS و Android * شراء التطبيق بقيمة إضافية</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- application ma -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        متجر التطبيقات
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-warning-600">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع التطبيقات الإحصائية</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع تطبيقات المحادثة</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع تطبيقات البريد الإلكتروني</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-4 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع تطبيقات الموقع الجغرافي</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-5 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع تطبيقات الرسائل النصية</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-6 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع تطبيقات تحسين الموقع</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-7 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع التطبيقات التسويقية</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-8 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الربط مع التطبيقات المحاسبية</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                </tr>
+                                <!-- advanced -->
+                                <tr class="relative text-center bg-purple-50">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right text-sm font-bold">
+                                        المزايا المتقدمة
+                                        <span class="line absolute h-full w-[3px] bg-purple-900 right-0 top-0">
+                                            <span class="absolute border-[6px] rotate-45 border-purple-900 -right-[5px] top-1/2 -translate-y-1/2"></span>
+                                        </span>
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-warning-600">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-900">
+                                    </td>
+                                    <td class="pt-5 pr-2 pb-5 pl-2 text-lg font-bold text-purple-500">
+                                    </td>
+                                </tr>
+                                <!-- Row-1 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">دعم العملات</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">الصفحات التعريفية</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">مدونة المتجر</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                </tr>
+                                <!-- Row-4 -->
+                                <tr class="text-center">
+                                    <td class="pt-5 pr-4 pb-5 pl-2 text-right">فلترة العملاء</td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-check"></i>
+                                    </td>
+                                    <td class="pt-8 pr-7 pb-8 pl-5 font-bold text-lg text-purple-600">
+                                        <i class="fas fa-xmark text-[#FF0000]"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pricing -->
+        <!-- Contact -->
+        <div class="contact p-14 w-fit mx-auto flex gap-3">
+            <div class="signup hidden lg:flex">
+                <a href="#" target="_blank" class="bg-purple-700 hover:bg-purple-800 py-2 px-2 duration-300 text-warning-50 rounded-md">اشترك الآن مجاناً</a>
+            </div>
+            <div class="email hidden lg:flex">
+                <a href="mailto:mohammedgomaa2522@gmail.com" class="border border-purple-800 text-purple-900 font-semibold hover:text-warning-50 hover:bg-purple-800 py-2 px-2 duration-300 rounded-md">تواصل معنا</a>
+            </div>
+        </div>
+        <!-- ********** Start Footer ********** -->
+        <footer class="p-6 text-center text-[white] bg-purple-700">
+            جميع الحقوق محفوظة لمنصة كارتي
+        </footer>
+        <!-- ********** End Footer ********** -->
+    </div>
+    <!-- -----Tailwind-----  -->
+    <script type="text/javascript" src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
